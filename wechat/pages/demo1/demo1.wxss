@@ -1,0 +1,22 @@
+/* pages/demo1/demo1.wxss */
+
+.min_btn {
+  margin-top: 60%;
+}
+
+page {
+    background-color: rgba(240, 240, 240, 0.973);
+}
+
+button {
+  background: rgb(250, 184, 61);
+}
+
+.text_c {
+  color: rgb(156, 156, 156);
+}
+
+.text_1 {
+  text-align: center;
+  margin-top: 80%;
+}

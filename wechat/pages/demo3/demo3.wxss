@@ -1,0 +1,31 @@
+/* pages/demo3/demo3.wxss */
+.aa_vw {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50rpx;
+  margin-top: 15%;
+}
+.a_in {
+  margin-right: 80rpx;
+  width: 60%;
+  background-color: white;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  border-radius: 30rpx;
+  padding-left: 30rpx;
+}
+page {
+    background-color: rgba(240, 240, 240, 0.973);
+}
+.bb_btn {
+  background: rgb(250, 184, 61);
+}
+.bb_vw {
+  margin-top: 20%;
+}
+.aa_f {
+  margin-top: 30%;
+}

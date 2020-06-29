@@ -1,0 +1,24 @@
+/* pages/demo4/demo4.wxss */
+.aa_i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+image{
+  width: 50%;
+}
+.aa_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50rpx;
+}
+.bb_btn {
+  background: rgb(250, 184, 61);
+}
+.text_1 {
+  margin-top: 40rpx;
+  text-align: center;
+  color: rgb(156, 156, 156);
+}

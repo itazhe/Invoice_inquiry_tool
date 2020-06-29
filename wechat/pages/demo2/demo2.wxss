@@ -1,0 +1,50 @@
+/* pages/demo2/demo2.wxss */
+
+.aa_btn, .bb_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.aa_in {
+  width: 70%;
+  background-color: white;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  margin-left: 40rpx;
+  border-radius: 30rpx;
+  padding-left: 30rpx;
+}
+.bb_btn {
+  margin-top: 50rpx;
+}
+.aa_vi {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+page {
+    background-color: rgba(240, 240, 240, 0.973);
+}
+image {
+  height: 28px;
+  width: 28px;
+}
+
+.data_list {
+  margin-top: 20rpx;
+  color: rgb(156, 156, 156);
+}
+.table {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  width: 80%;
+  padding: 3%;
+}
+.td {
+  padding-left: 5%;
+}
+.text_1 {
+  margin-top: 20rpx;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+<!--pages/demo4/demo4.wxml-->
+<view class="aa_i">
+<image src="../../icon/success.png" mode="widthFix"></image>
+</view>
+
+<view class="text_1">
+<view>是否保存发票信息？</view>
+</view>
+
+<view class="aa_btn">
+<button class="bb_btn" bindtap="navigateto">退出</button>
+<button class="bb_btn" bindtap="navigateto2">保存</button>
+</view>

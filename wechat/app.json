@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/demo2/demo2",
+    "pages/demo3/demo3",
+    "pages/demo4/demo4",
+    "pages/demo1/demo1"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "发票真伪查询",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath":"pages/demo1/demo1",
+        "text": "首页",
+        "iconPath": "icon/index.png",
+        "selectedIconPath": "icon/index_click.png"
+      },
+      {
+        "pagePath": "pages/demo2/demo2",
+        "text": "我的",
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my_click.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,13 @@
+<!--pages/demo1/demo1.wxml-->
+<view class="min_btn">
+<button bindtap="getscanCode">扫描查询</button>
+</view>
+<!-- <view wx:if="{{ result != ''}}"> 
+  <view>扫码的内容：{{ result }}</view>
+</view> -->
+
+<view class="text_1">
+  <view class="text_c">发票查重工具：主要解决发票查重和发票真伪查询</view>
+</view>
+
+

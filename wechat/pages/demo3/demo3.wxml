@@ -1,0 +1,19 @@
+<!--pages/demo3/demo3.wxml-->
+
+<form bindsubmit='query_form'>
+<view class="aa_f">
+<view class="aa_vw">发票代码：
+<input placeholder="  请输入发票代码" class="a_in" name="number"></input>
+</view>
+<view class="aa_vw">报销人员：
+<input placeholder="  请填写报销人员姓名" class="a_in" name="username"></input>
+</view>
+<view class="aa_vw">开票单位：
+<input placeholder="  请填写开票单位" class="a_in" name="department"></input>
+</view>
+
+<view class="bb_vw">
+<button class="bb_btn" form-type="submit">录入</button>
+</view>
+</view>
+</form>
