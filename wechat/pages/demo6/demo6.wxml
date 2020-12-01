@@ -1,0 +1,24 @@
+<!--pages/demo6/demo6.wxml-->
+<!-- 登录页面 -->
+
+<view class="ff_vi">
+<!-- <image src="../../icon/博政.png" class="cc_image"></image> -->
+<image src="{{ url1 }}" class="cc_image"></image>
+</view>
+
+<view class="a_vi">
+<form bindsubmit="query_form">
+    <view class="aa_vi">
+      <!-- <image src="../../icon/用户名.png" class="aa_image"></image> -->
+      <image src="{{ url2 }}" class="aa_image"></image>
+      <input placeholder="请输入用户名" class="aa_input" name="username"></input>
+    </view>
+    <view class="bb_vi">
+      <!-- <image src="../../icon/密码 (1).png" class="bb_image"></image> -->
+      <image src="{{ url3 }}" class="bb_image"></image>
+      <input placeholder="请输入密码" class="bb_input" type="password" name="password"></input>
+    </view>
+    <button class="aa_btn" form-type="submit">登录</button>
+</form> 
+</view>
+

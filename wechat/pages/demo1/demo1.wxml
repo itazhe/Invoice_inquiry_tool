@@ -1,13 +1,40 @@
 <!--pages/demo1/demo1.wxml-->
-<view class="min_btn">
-<button bindtap="getscanCode">扫描查询</button>
-</view>
-<!-- <view wx:if="{{ result != ''}}"> 
-  <view>扫码的内容：{{ result }}</view>
+<!-- <view class="aa_vi">
+  <view class="dd_vi" bindtap="getscanCode">
+  <image src="../../icon/扫一扫.png" class="aa_image"></image>
+  <view class="bb_vi">扫描查询</view>
+  </view>
+
+  <view class="dd_vi" bindtap="hand_input">
+  <image src="../../icon/创作.png" class="aa_image"></image>
+  <view class="bb_btn" class="bb_vi">手动录入</view>
+  </view>
 </view> -->
 
-<view class="text_1">
+<!-- <view class="text_1">
   <view class="text_c">发票查重工具：主要解决发票查重和发票真伪查询</view>
+</view> -->
+
+<view class="aa_vi">
+  <view class="dd_vi" bindtap="getscanCode">
+  <!-- <image src="../../icon/扫一扫.png" class="aa_image"></image> -->
+  <image src="{{ url1 }}" class="aa_image"></image>
+  <view class="bb_vi">扫描录入</view>
+  </view>
 </view>
 
+<view class="aa_vi">
+  <view class="dd_vi" bindtap="getfile">
+  <!-- <image src="../../icon/扫一扫.png" class="aa_image"></image> -->
+  <image src="{{ url3 }}" class="aa_image"></image>
+  <view class="bb_vi">上传PDF</view>
+  </view>
+</view>
 
+<view class="aa_vi">
+  <view class="dd_vi" bindtap="hand_input">
+  <!-- <image src="../../icon/创作.png" class="aa_image"></image> -->
+  <image src="{{ url2 }}" class="aa_image"></image>
+  <view class="bb_btn" class="bb_vi">手动录入</view>
+  </view>
+</view>

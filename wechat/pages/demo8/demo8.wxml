@@ -1,0 +1,76 @@
+<!--pages/demo3/demo3.wxml-->
+<!-- 发票详细页面 -->
+
+<view wx:for="{{ datalist }}" wx:for-item="item" wx:for-index="index" wx:key="invoice_type">
+<view class="aa_vi" style="margin-top: {{ sty }}">
+  <view class="bb_vi">
+    <view>发票类型</view> 
+    <view>{{ item[0] }}</view>
+  </view>
+  <view class="divline"></view>
+  
+  <view class="bb_vi">
+    <view>发票代码</view>
+    <view>{{ item[1] }}</view>
+  </view>
+  <view class="divline"></view>
+  <view class="bb_vi">
+    <view>发票号码</view>
+    <view>{{ item[2] }}</view>
+  </view>
+  <view class="divline"></view>
+  <view class="bb_vi">
+    <view>开票日期</view>
+    <view>{{ item[3] }}</view>
+  </view>
+  <view class="divline"></view>
+  <view class="bb_vi">
+    <view>检验码</view>
+    <view>{{ item[4] }}</view>
+  </view>
+  <view class="divline"></view>
+  <view class="bb_vi">
+    <view>发票金额</view>
+    <view>{{ item[5] }}</view>
+  </view>
+
+  <view class="divline"></view>
+  <view class="bb_vi">
+    <view>税率(%)</view>
+    <view>{{ item[6] }}</view>
+  </view>
+  <view class="divline"></view>
+  <view class="bb_vi"> 
+    <view>税额</view>
+    <view>{{ item[7] }}</view>
+  </view>
+  <view class="divline"></view>
+  <view class="bb_vi">
+    <view>价税合计</view>
+    <view>{{ item[8] }}</view>
+  </view>
+</view>
+
+<view class="ee_vi">
+  <view class="bb_vi">
+    <view>报销人员</view>
+    <view>{{ item[9] }}</view>
+  </view>
+  <view class="divline"></view>
+  <view class="bb_vi">
+    <view>报销部门</view>
+    <view>{{ item[10] }}</view>
+  </view>
+  <view class="divline"></view>
+  <view class="oo_vi">
+    <view class="f_vi">开票单位</view>
+    <view>{{ item[11] }}</view>
+  </view>
+  <view class="divline"></view>
+  <view class="oo_vi">
+    <view>注：</view>
+    <view>{{ item[12] }}</view>
+  </view>
+</view>
+</view>
+

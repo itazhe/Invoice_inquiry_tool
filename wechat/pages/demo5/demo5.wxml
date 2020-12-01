@@ -1,7 +1,23 @@
-<!--pages/demo2/demo2.wxml-->
+<!--pages/demo5/demo5.wxml-->
+<!-- 消费记录页面 -->
+
+<view class="container">
+  <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取昵称 </button>
+      <block wx:else>
+        <!-- <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> -->
+        <text class="userinfo-nickname">用户：{{userInfo.nickName}}</text>
+      </block>
+      <view class="aa_c">
+        <!-- <view>剩余查验次数：{{ count }}</view> -->
+        <button size="mini" style="background: orange" bindtap="onLoad">剩余查验次数：{{ count }}</button>
+        <!-- <button size="mini" style="background: orange">剩余查验次数：999999</button> -->
+      </view>
+      <!-- <button size="mini" style="background:orange">刷新</button> -->
+  </view>
+</view>
 
 
-<form bindsubmit='query_form'>
 <view class="aa_btn" style="margin-top: 30rpx">
 <view style="margin-left:30rpx;">录入日期：</view>
 <picker mode="date" value="{{2020-5-20}}" start="2015-09-01" end="2100-09-01" bindchange="bindDate1Change">
@@ -13,16 +29,9 @@
 <button size="mini" style="background: white; margin-top: 8rpx; margin-right: 30rpx">{{ date2 }}</button>
 </picker>
 </view>
-<view class="bb_btn">
-<input class="aa_in" placeholder="输入报销人、发票号、发票代码进行查询" name="user_input"></input>
-<button size="mini" style="background: orange" form-type="submit">查询</button>
-</view>
-</form>
 
-<view class="aa_vi">
-<!-- <view> 台账列表({{ date1 }} 至 {{ date2 }}) :</view> -->
-<view> 台账列表 :</view>
-</view>
+
+<view class="a_vi">总消费记录：{{ num }}条</view>
 
 <view class="data_list">
   <view wx:for="{{ datalist }}" 
@@ -44,6 +53,7 @@
       </view>
       <view hidden>{{ index }}</view>
     </view>
+    
   </view>
 
   <view hidden="{{ isshow }}">
@@ -58,7 +68,5 @@
       <button size="mini" bindtap="bindletap" data-page="{{ 3 }}">尾页</button>
     </view>
   </view>
-  
 <!-- <view class="text_1">{{ aa_text }}</view> -->
 </view>
-

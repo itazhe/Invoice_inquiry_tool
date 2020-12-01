@@ -1,0 +1,29 @@
+<!--pages/demo7/demo7.wxml-->
+<!-- 授权页面 -->
+
+  <view class='headView'>
+
+<!--     <view class='headImageView'>
+
+      <image class='headImage' src='/pages/imageSource/IMG_3456.png' mode='scaleToFill'></image>
+
+    </view> -->
+    <view class="container">
+      <view class="userinfo">
+          <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="margin-right:30vw"> 获取头像昵称 </button>
+          <block wx:else>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          </block>
+      </view>
+    </view>
+
+    <view class='titleText'>申请获取以下权限</view>
+
+    <view class='contentText'>获得你的公开信息(昵称,头像等)</view>
+
+    <button class='authBtn' type='primary' open-type='getUserInfo' bindgetuserinfo='bindGetUserInfo'>授权登录</button>
+
+  </view>
+
+

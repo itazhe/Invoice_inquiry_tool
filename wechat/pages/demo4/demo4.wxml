@@ -1,13 +1,97 @@
-<!--pages/demo4/demo4.wxml-->
-<view class="aa_i">
-<image src="../../icon/success.png" mode="widthFix"></image>
-</view>
+<!--pages/demo3/demo3.wxml-->
+<!-- 扫描录入页面 -->
 
-<view class="text_1">
-<view>是否保存发票信息？</view>
-</view>
+<form bindsubmit="query_form">
+  <image src="{{ isshow }}" class="a_image"></image>
 
-<view class="aa_btn">
-<button class="bb_btn" bindtap="navigateto">退出</button>
-<button class="bb_btn" bindtap="navigateto2">保存</button>
-</view>
+  
+  <view class="aa_vi" style="margin-top: {{ sty }}">
+    <view class="bb_vi">
+      <view>发票类型</view> 
+      <picker bindchange="bindpickerchange" value="{{ array[index] }}" range="{{ array }}" name="i_type">
+      <view>{{ array[index] }}</view>
+      </picker>   
+      <!-- <view style="color: rgb(190, 188, 188)">选择</view> -->
+    </view>
+    <view class="divline"></view>
+    <view wx:for="{{ datalist }}" wx:for-item="item" wx:for-index="index" wx:key="invoice_type">
+    <view class="bb_vi">
+      <view>发票代码</view>
+      <image src="../../icon/五角星.png"></image>
+      <input placeholder="请输入发票代码" name="i_code" value="{{ item[0] }}"></input>
+    </view>
+    <view class="divline"></view>
+    <view class="bb_vi">
+      <view>发票号码</view>
+      <image src="../../icon/五角星.png"></image>
+      <input placeholder="请输入发票号码" name="i_number" value="{{ item[1] }}"></input>
+    </view>
+    <view class="divline"></view>
+    <view class="bb_vi">
+      <view>开票日期</view>
+      <image src="../../icon/五角星.png"></image>
+      <input placeholder="请输入发票检验码" name="i_date" value="{{ item[2] }}"></input>
+    </view>
+    <view class="divline"></view>
+    <view class="bb_vi">
+      <view>检验码</view>
+      <image src="../../icon/五角星.png"></image>
+      <input placeholder="请输入发票检验码" name="code" value="{{ item[3] }}"></input>
+    </view>
+    <view class="divline"></view>
+    <view class="bb_vi">
+      <view>发票金额</view>
+      <image src="../../icon/五角星.png"></image>
+      <input placeholder="请输入发票金额（不含税）" bindinput="bind_blur" name="money" value="{{ item[4] }}"></input>
+    </view>
+    </view>
+    
+    <view class="divline"></view>
+    <view class="bb_vi">
+      <view>税率(%)</view>
+      <input placeholder="请输入发票税率" bindinput="bind_blur2" name="invoice_rate" value="{{ data1 }}"></input>
+    </view>
+    <view class="divline"></view>
+    <view class="bb_vi"> 
+      <view>税额</view>
+      <input placeholder="自行计算" name="invoice_amount" value="{{ data2 }}"></input>
+    </view>
+    <view class="divline"></view>
+    <view class="bb_vi">
+      <view>价税合计</view>
+      <input placeholder="自行计算" name="price_tax" value="{{ data3 }}"></input>
+    </view>
+   
+  </view>
+
+  <view class="ee_vi">
+    <view class="bb_vi">
+      <view>报销人员</view>
+      <input placeholder="请填写报销人员" name="name" value="{{ name }}"></input>
+    </view>
+    <view class="divline"></view>
+    <view class="bb_vi">
+      <view>报销部门</view>
+      <input placeholder="请填写报销部门" name="department" value="{{ department }}"></input>
+    </view>
+    <view class="divline"></view>
+    <view class="bb_vi">
+      <view>开票单位</view>
+      <input placeholder="自动填写" name="invoice_entity" value="{{ invoice_entity }}"></input>
+    </view>
+    <view class="divline"></view>
+    <!-- <view class="oo_vi"> -->
+    <view class="bb_vi">
+      <view>注</view>
+      <input placeholder="备   注" name="remark" value="{{ remark }}"></input>
+      <!-- <textarea placeholder="备   注" name="remark" value="{{ remark }}"></textarea> -->
+    </view>
+  </view>
+
+
+  <view class="cc_vi">
+    <button class="aa_btn" form-type="submit" data-type="1" hidden="{{ isshow2 }}">查验真伪</button>
+    <button class="bb_btn" form-type="submit" data-type="2" hidden="{{ isshow1 }}">保存</button>
+    <button class="cc_btn" data-type="3" bindtap="quit_btn" hidden="{{ isshow3 }}">退出</button>
+  </view>
+</form>

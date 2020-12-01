@@ -1,0 +1,69 @@
+/* pages/demo7/demo7.wxss */
+.headView {
+margin: 13vh 50rpx 0 50rpx; /*上右下左*/
+}
+  
+.headImageView {
+display: block;
+margin-left: 25px;
+margin-top: 25px;
+margin-right: 25px;
+margin-bottom: 0px;
+height: 50px;
+}
+
+.headImage{
+display: flex;
+width: 50px;
+height: 50px;
+}
+
+.titleText {
+/* margin-left: 25px; */
+margin-top: 25px;
+margin-bottom: 10px;
+font-size: 14px;
+color: #020e0f;
+text-align: center;
+}
+
+.contentText {
+/* margin-left: 25px; */
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 14px;
+color: #666;
+text-align: center;
+}
+
+.authBtn {
+margin-top: 35px;
+/* margin-left: 25px; */
+margin-right: 25px;
+height: 45px;
+font-size: 17.5px;
+}
+
+.container {
+  padding: 0 0;
+  margin-top: 50rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin-left: 50%;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin: auto 0;
+  color: #aaa;
+}

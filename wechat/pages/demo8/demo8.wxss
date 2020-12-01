@@ -11,11 +11,11 @@ background: white;
 margin: 10rpx auto;
 border-radius: 5px;
 border: 1px solid rgb(204, 198, 198);
-margin-top: -710rpx;
+/* margin-top: -710rpx; */ 
 }
 .ee_vi {
 width: 90%;
-height: 29vh;
+height: 30vh;
 background: white;
 margin: 15rpx auto;
 border-radius: 5px;
@@ -30,7 +30,6 @@ margin-bottom: 2.5%; */
 height: 6.5vh;
 /* text-align: center; */
 line-height: 6.5vh;
-/* flex-wrap: wrap; */
 }
 .aa_btn {
 background: green;
@@ -41,11 +40,6 @@ color: white;
 background: orange;
 border-radius: 20px;
 color: white;
-}
-.cc_btn {
-  background: rgb(238, 70, 70);
-  border-radius: 20px;
-  color: white;
 }
 .cc_vi {
 display: flex;
@@ -70,7 +64,7 @@ margin-left: 2%;
 color: rgb(56, 55, 55);
 }
 picker {
-width: 80%;
+width: 60%;
 }
 image {
 width: 20rpx;
@@ -85,21 +79,22 @@ width: 500rpx;
 height: 700rpx;
 }
 
-/* .oo_vi {
-display: flex;
-flex-direction: row;
-height: 6.5vh;
-line-height: 6.5vh;
-} */
-
 .oo_vi {
   display: flex;
   flex-direction: row;
   height: 6.5vh;
-  padding-left: 3%;
+  /* padding-left: 2.5%; */
   line-height: 3vh;
-}
-
-textarea {
+  }
+/* textarea {
   margin-left: 3%;
+} */
+.oo_vi view {
+  height: 5vh;
+  margin-left: 2%;
+  color: rgb(56, 55, 55);
+} 
+
+.f_vi {
+  width: 25%;
 }

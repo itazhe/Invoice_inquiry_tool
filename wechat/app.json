@@ -1,16 +1,22 @@
 {
   "pages":[
-    "pages/demo2/demo2",
+    "pages/demo6/demo6",
     "pages/demo3/demo3",
+    
+    "pages/demo5/demo5",
+    "pages/demo1/demo1", 
+    "pages/demo7/demo7",
+    "pages/demo9/demo9",
+    "pages/demo2/demo2",  
     "pages/demo4/demo4",
-    "pages/demo1/demo1"
+    "pages/demo8/demo8"
   ],
   "window":{
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "发票真伪查询",
     "navigationBarTextStyle":"black",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "list": [
@@ -22,6 +28,12 @@
       },
       {
         "pagePath": "pages/demo2/demo2",
+        "text": "查重",
+        "iconPath": "icon/搜索.png",
+        "selectedIconPath": "icon/搜索1.png"
+      },
+      {
+        "pagePath": "pages/demo5/demo5",
         "text": "我的",
         "iconPath": "icon/my.png",
         "selectedIconPath": "icon/my_click.png"

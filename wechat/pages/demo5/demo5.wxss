@@ -1,34 +1,40 @@
-/* pages/demo2/demo2.wxss */
+/* pages/demo5/demo5.wxss */
+.container {
+  padding: 0 0;
+  margin-top: 50rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
 
-.aa_btn, .bb_btn {
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+/* .userinfo-nickname {
+  margin-right: 25%;
+  color: #aaa;
+} */
+.aa_btn {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.aa_in {
-  width: 70%;
-  background-color: white;
-  height: 65rpx;
-  line-height: 28px;
-  font-size: 14px;
-  margin-left: 40rpx;
-  border-radius: 30rpx;
-  padding-left: 20rpx;
-}
-.bb_btn {
-  margin-top: 50rpx;
-}
-.aa_vi {
-  margin-top: 30rpx;
-  margin-left: 30rpx;
-}
 page {
-    background-color: rgba(240, 240, 240, 0.973);
+  background-color: rgba(240, 240, 240, 0.973);
 }
-image {
-  height: 28px;
-  width: 28px;
+.a_vi {
+  margin: 20rpx auto;
+  color: #aaa;
+  text-align: center;
 }
 
 .data_list {
@@ -38,7 +44,7 @@ image {
 .table {
   margin: 5px auto;
   border: 1px solid #ccc;
-  height: 16vh;
+  height: 17.5vh;
   width: 90%;
   padding: 3%;
   background: white;
@@ -56,7 +62,6 @@ image {
   font-size: small;
   margin-top:1vh
 }
-
 .page_btn {
   /* display: flex;
   flex-direction: row;
